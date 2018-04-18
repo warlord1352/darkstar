@@ -526,7 +526,7 @@ function toExplorerMoogle(player,zone)
     if (zone == 231) then
         player:setPos(39.4, -0.2, 25, 253, zone);        -- Northern_San_d'Oria
     elseif (zone == 234) then
-        player:setPos(76.82, 0, -66.12, 232, zone);        -- Bastok_Mines
+        player:setPos(81.646, 0, -64.102, 234, zone);        -- Bastok_Mines
     elseif (zone == 240) then
         player:setPos(185.6, -12, 223.5, 96, zone);        -- Port_Windurst
     elseif (zone == 248) then
