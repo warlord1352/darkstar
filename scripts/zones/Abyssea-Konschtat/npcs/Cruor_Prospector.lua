@@ -102,7 +102,7 @@ function onEventFinish(player,csid,option)
         ItemID = 2490;
         Quantity = 50;
 
-    -- Temp items
+    -- Temp items page 1
     elseif (option == 65538) then -- Lucid Potion I
         if (player:addTempItem(5824,1)) then
             player:messageSpecial(ITEM_OBTAINED,5824);
@@ -152,6 +152,13 @@ function onEventFinish(player,csid,option)
         if (player:addTempItem(5828,1)) then
             player:messageSpecial(ITEM_OBTAINED,5828);
             player:delCurrency("cruor", 200);
+        end
+		
+	--Temp items page 2
+	elseif (option == 1114114) then -- Primeval Brew
+        if (player:addTempItem(5853,1)) then
+            player:messageSpecial(ITEM_OBTAINED,5853);
+            player:delCurrency("cruor", 2000000);
         end
 
     -- Keyitems
