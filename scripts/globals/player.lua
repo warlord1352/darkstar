@@ -237,7 +237,7 @@ function CharCreate(player)
     {
         -- SANDY CITIZEN
         [0] = function (x)
-            if ((race == 3) or (race == 4))
+            if ((race == 1) or (race == 2) or (race == 3) or (race == 4) or (race == 5) or (race == 6) or (race == 7) or (race == 8))
                 then player:addItem(0x34B7);
             end;
             player:addKeyItem(MAP_OF_THE_SAN_DORIA_AREA);
@@ -245,7 +245,7 @@ function CharCreate(player)
 
         -- BASTOK CITIZEN
         [1] = function (x)
-            if (((race == 1) or (race == 2) or (race == 8)))
+            if ((race == 1) or (race == 2) or (race == 3) or (race == 4) or (race == 5) or (race == 6) or (race == 7) or (race == 8))
                 then player:addItem(0x34B9);
             end;
             player:addKeyItem(MAP_OF_THE_BASTOK_AREA);
@@ -253,7 +253,7 @@ function CharCreate(player)
 
         -- WINDY CITIZEN
         [2] = function(x)
-            if (((race == 5) or (race == 6) or (race == 7)))
+            if ((race == 1) or (race == 2) or (race == 3) or (race == 4) or (race == 5) or (race == 6) or (race == 7) or (race == 8))
                 then player:addItem(0x34B8);
             end;
             player:addKeyItem(MAP_OF_THE_WINDURST_AREA);
@@ -326,7 +326,7 @@ function CharCreate(player)
     player:addTitle(NEW_ADVENTURER);
 
     -- Needs Moghouse Intro
-    player:setVar("MoghouseExplication",1);
+    player:setVar("MoghouseExplication",0);
 
 end;
 
