@@ -75,7 +75,9 @@ CCharStatsPacket::CCharStatsPacket(CCharEntity * PChar)
 	ref<uint8>(0x46) = PChar->profile.rank[PChar->profile.nation];
 	ref<uint16>(0x48) = PChar->profile.rankpoints;
     ref<uint16>(0x4A) = PChar->profile.home_point.destination;
-	ref<uint8>(0x50) = PChar->profile.nation; 
+	ref<uint8>(0x50) = PChar->profile.nation;
+    ref<uint8>(0x52) = 3; // Enable all SU1, SU2 and SU3 gear
+    ref<uint8>(0x54) = 255; // Enable up to ilvl 255
     //0x52 = superior level (1 or 2)
     //0x54 = maximum item level
     //0x55 = itemlevel over 99
