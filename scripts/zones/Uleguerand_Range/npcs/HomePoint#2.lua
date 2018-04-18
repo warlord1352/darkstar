@@ -1,7 +1,7 @@
 -----------------------------------
 -- Area: Uleguerand_Range
 --  NPC: HomePoint#2
--- !pos
+-- !pos 380 23 -62 5
 -----------------------------------
 package.loaded["scripts/zones/Uleguerand_Range/TextIDs"] = nil;
 -----------------------------------
