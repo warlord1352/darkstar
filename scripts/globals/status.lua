@@ -30,33 +30,34 @@ dsp.zoneMisc =
 -- Job IDs
 ------------------------------------
 
-JOBS =
+dsp.jobs =
 {
-    ["NONE"] = 0,
-    ["WAR"] =  1,
-    ["MNK"] =  2,
-    ["WHM"] =  3,
-    ["BLM"] =  4,
-    ["RDM"] =  5,
-    ["THF"] =  6,
-    ["PLD"] =  7,
-    ["DRK"] =  8,
-    ["BST"] =  9,
-    ["BRD"] = 10,
-    ["RNG"] = 11,
-    ["SAM"] = 12,
-    ["NIN"] = 13,
-    ["DRG"] = 14,
-    ["SMN"] = 15,
-    ["BLU"] = 16,
-    ["COR"] = 17,
-    ["PUP"] = 18,
-    ["DNC"] = 19,
-    ["SCH"] = 20,
-    ["GEO"] = 21,
-    ["RUN"] = 22
+    NONE            =  0,
+    WAR             =  1,
+    MNK             =  2,
+    WHM             =  3,
+    BLM             =  4,
+    RDM             =  5,
+    THF             =  6,
+    PLD             =  7,
+    DRK             =  8,
+    BST             =  9,
+    BRD             = 10,
+    RNG             = 11,
+    SAM             = 12,
+    NIN             = 13,
+    DRG             = 14,
+    SMN             = 15,
+    BLU             = 16,
+    COR             = 17,
+    PUP             = 18,
+    DNC             = 19,
+    SCH             = 20,
+    GEO             = 21,
+    RUN             = 22,
 }
-MAX_JOB_TYPE = 23
+dsp.MAX_JOB_TYPE = 23;
+
 
 ------------------------------------
 -- STATUSES
@@ -1238,7 +1239,8 @@ MOD_DODGE_EFFECT             = 552 -- Dodge effect in percents
 MOD_FOCUS_EFFECT             = 561 -- Focus effect in percents
 MOD_MUG_EFFECT               = 835 -- Mug effect as multiplier
 MOD_ACC_COLLAB_EFFECT        = 884 -- Increases amount of enmity transferred
-MOD_HIDE_DURATION            = 885 -- Hide duration increase (percentage based)
+MOD_HIDE_DURATION            = 885 -- Hide duration increase (percentage based
+MOD_GILFINDER                = 897 -- Gil % increase
 MOD_REVERSE_FLOURISH_EFFECT  = 836 -- Reverse Flourish effect in tenths of squared term multiplier
 MOD_SENTINEL_EFFECT          = 837 -- Sentinel effect in percents
 MOD_REGEN_MULTIPLIER         = 838 -- Regen base multiplier
@@ -1448,12 +1450,15 @@ MOD_ANCIENT_CIRCLE_DURATION = 859
 MOD_CURE2MP_PERCENT         = 860 -- Converts % of "Cure" amount to MP
 MOD_SAVETP                  = 880 -- SAVETP Effect for Miser's Roll / ATMA / Hagakure.
 
+MOD_SMITE                   = 898 -- Att increase with H2H or 2H weapons
+MOD_TACTICAL_GUARD          = 899 -- Tp gain increase when guarding
+
 
 -- The spares take care of finding the next ID to use so long as we don't forget to list IDs that have been freed up by refactoring.
 -- 570 - 825 used by WS DMG mods these are not spares.
--- SPARE = 897 -- stuff
--- SPARE = 898 -- stuff
--- SPARE = 899 -- stuff
+-- SPARE = 900 -- stuff
+-- SPARE = 901 -- stuff
+-- SPARE = 902 -- stuff
 
 ------------------------------------
 -- Merit Definitions
