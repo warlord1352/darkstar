@@ -15,6 +15,7 @@ ITEM_CANNOT_BE_OBTAINED = 6380; -- You cannot obtain the item <item>. Come back 
       LEYLA_SHOP_DIALOG = 7012; -- Hello. All goods are duty-free.
       GEKKO_SHOP_DIALOG = 7012; -- Hello. All goods are duty-free.
    CHALLOUX_SHOP_DIALOG = 7013; -- Good day!
+ TREASURE_COFFER_DIALOG = 7013;
 
 -- Other Texts
             GUIDE_STONE = 7011; -- Up: Lower Jeuno (Selection Dialogfacing Bastok) Down: Qufim Island
