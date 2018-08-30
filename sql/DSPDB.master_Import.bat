@@ -28,14 +28,14 @@ REM ======                                                              ========
 REM =============================================================================
 REM =============================================================================
 
-ECHO Creating Database dspdb
-"C:\Program Files\MySQL\MySQL Server 5.7\bin\mysqladmin"-h localhost -u root -pflames DROP dspdb
+ECHO Creating Database dspdb.master
+"C:\Program Files\MySQL\MySQL Server 5.7\bin\mysqladmin"-h localhost -u root -pflames DROP dspdb.master
 
-ECHO Creating Database dspdb
-"c:\program files\mysql\mysql server 5.7\bin\mysqladmin"-h localhost -u root -pflames CREATE dspdb
+ECHO Creating Database dspdb.master
+"c:\program files\mysql\mysql server 5.7\bin\mysqladmin"-h localhost -u root -pflames CREATE dspdb.master
 
 ECHO Loading dspdb.master tables into the database
 cd D:\My DarkStar Server\darkstar-master\sql
-FOR %%X IN (*.sql) DO ECHO Importing %%X & "c:\program files\mysql\mysql server 5.7\bin\mysql" dspdb -h localhost -u root -pflames < %%X
+FOR %%X IN (*.sql) DO ECHO Importing %%X & "c:\program files\mysql\mysql server 5.7\bin\mysql" dspdb.master -h localhost -u root -pflames < %%X
 
 ECHO Finished!
